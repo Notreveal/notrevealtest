@@ -1,0 +1,5 @@
+{
+  "name": "AI Edital Verticalizer",
+  "description": "An application that uses multimodal AI to extract and structure information from public tender documents (editais) provided as text, images, or PDFs.",
+  "requestFramePermissions": []
+}
