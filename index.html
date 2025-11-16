@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Edital Verticalizer</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Adiciona o Babel Standalone para traduzir JSX/TS no navegador -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
       /* Custom scrollbar for a more modern look */
       ::-webkit-scrollbar {
@@ -45,6 +47,8 @@
 </head>
   <body class="bg-slate-900 text-slate-200">
     <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+    <!-- Alterado o tipo para "text/babel" para que o Babel possa traduzi-lo -->
+    <script type="text/babel" data-type="module" src="/index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
 </html>
