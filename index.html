@@ -47,6 +47,12 @@
 </head>
   <body class="bg-slate-900 text-slate-200">
     <div id="root"></div>
+    <!-- Polyfill para process.env para evitar crash em ambiente de navegador puro -->
+    <script>
+      if (typeof process === 'undefined') {
+        window.process = { env: {} };
+      }
+    </script>
     <!-- Alterado o tipo para "text/babel" E adicionado presets para react e typescript -->
     <script type="text/babel" data-presets="react,typescript" data-type="module" src="/index.tsx"></script>
   <script type="module" src="/index.tsx"></script>
