@@ -1,13 +1,14 @@
+
 import React, { useState, useCallback, useRef } from 'react';
-import { verticalizeEdital, FilePart } from './services/geminiService';
-import Header from './components/Header';
-import Loader from './components/Loader';
-import ResultDisplay from './components/ResultDisplay';
-import ExportButtons from './components/ExportButtons';
-import type { EditalData } from './types';
-import StudyPlanner from './components/StudyPlanner';
-import LoginModal from './components/LoginModal';
-import { AuthProvider, useAuth } from './contexts/AuthContext';
+import { verticalizeEdital, FilePart } from './services/geminiService.ts';
+import Header from './components/Header.tsx';
+import Loader from './components/Loader.tsx';
+import ResultDisplay from './components/ResultDisplay.tsx';
+import ExportButtons from './components/ExportButtons.tsx';
+import type { EditalData } from './types.ts';
+import StudyPlanner from './components/StudyPlanner.tsx';
+import LoginModal from './components/LoginModal.tsx';
+import { AuthProvider, useAuth } from './contexts/AuthContext.tsx';
 import { Bot, Zap, AlertTriangle, FileUp, User, Info, XCircle, BookCheck, LayoutList } from 'lucide-react';
 
 const App: React.FC = () => {
