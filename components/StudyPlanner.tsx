@@ -1,10 +1,11 @@
+
 import React, { useState, useEffect, useMemo } from 'react';
 // FIX: The StudyPlan type should be imported from its source definition in `../types`.
-import type { StudyPlan } from '../types';
-import ProgressBar from './ProgressBar';
-import Dashboard from './Dashboard';
+import type { StudyPlan } from '../types.ts';
+import ProgressBar from './ProgressBar.tsx';
+import Dashboard from './Dashboard.tsx';
 import { ChevronDown, BookOpen, Trash2, Plus, Check, Pencil, Link, ExternalLink, X } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext.tsx';
 
 interface SubTopic {
   id: string;

@@ -1,9 +1,10 @@
+
 import React from 'react';
 import { FileDown, FileText, FileSpreadsheet } from 'lucide-react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
 import * as XLSX from 'xlsx';
-import type { EditalData } from '../types';
+import type { EditalData } from '../types.ts';
 
 
 interface ExportButtonsProps {

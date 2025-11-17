@@ -1,6 +1,7 @@
+
 import React from 'react';
 import { LayoutTemplate, User, LogIn, LogOut } from 'lucide-react';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../contexts/AuthContext.tsx';
 
 interface HeaderProps {
   onLoginClick: () => void;

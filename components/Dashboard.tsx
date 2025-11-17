@@ -1,5 +1,6 @@
+
 import React from 'react';
-import ProgressBar from './ProgressBar';
+import ProgressBar from './ProgressBar.tsx';
 import { BarChart2, TrendingUp, Target } from 'lucide-react';
 
 interface PerformanceData {

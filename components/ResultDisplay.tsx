@@ -1,5 +1,6 @@
+
 import React from 'react';
-import type { EditalData } from '../types';
+import type { EditalData } from '../types.ts';
 import { BookOpen, Calendar, Briefcase, ChevronRight } from 'lucide-react';
 
 interface ResultDisplayProps {
