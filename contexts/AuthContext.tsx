@@ -1,6 +1,7 @@
+
 import React, { createContext, useState, useEffect, useContext, ReactNode } from 'react';
-import type { EditalData, StudyPlan, UserProfile, User } from '../types';
-import { api } from '../services/apiService';
+import type { EditalData, StudyPlan, UserProfile, User } from '../types.ts';
+import { api } from '../services/apiService.ts';
 
 // --- TYPES ---
 interface AuthContextType {
