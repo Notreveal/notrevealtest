@@ -1,4 +1,5 @@
-import type { StudyPlan, UserProfile } from '../types';
+
+import type { StudyPlan, UserProfile } from '../types.ts';
 
 const API_BASE_URL = 'http://localhost:3001/api';
 const GUEST_PLAN_KEY = 'studyPlanData_guest';
