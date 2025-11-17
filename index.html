@@ -8,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Adiciona o Babel Standalone para traduzir JSX/TS no navegador -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="/index.css">
     <style>
       /* Custom scrollbar for a more modern look */
       ::-webkit-scrollbar {
@@ -43,7 +44,6 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-900 text-slate-200">
     <div id="root"></div>
@@ -53,8 +53,8 @@
         window.process = { env: {} };
       }
     </script>
-    <!-- Alterado o tipo para "text/babel" E adicionado presets para react e typescript -->
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="/index.tsx"></script>
+    <!-- Deixa o Babel manipular a transpilação e execução do módulo TSX -->
+    <script type="text/babel" data-presets="react,typescript" src="/index.tsx" data-type="module"></script>
   <script type="module" src="/index.tsx"></script>
 </body>
 </html>
